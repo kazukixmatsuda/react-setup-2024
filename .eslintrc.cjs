@@ -5,29 +5,25 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended", // 追加
-    "plugin:react/jsx-runtime", // 追加
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
-    "plugin:vitest/recommended", // 追加
-    "prettier", // 追加
+    "plugin:vitest/recommended",
+    "prettier",
+    "plugin:storybook/recommended",
   ],
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parser: "@typescript-eslint/parser",
-  plugins: [
-    "react-refresh",
-    "import", // 追加
-  ],
+  plugins: ["react-refresh", "import"],
   settings: {
-    react: { version: "detect" }, // 追加
+    react: { version: "detect" },
   },
   rules: {
     "react-refresh/only-export-components": [
       "warn",
       { allowConstantExport: true },
     ],
-    // it ではなく test の使用を強制
     "vitest/consistent-test-it": ["error", { fn: "test" }],
-    // import の並び順を設定
     "import/order": [
       "warn",
       {
