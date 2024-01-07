@@ -8,5 +8,8 @@ export default defineConfig({
   test: {
     environment: "happy-dom",
     setupFiles: ["./vitest-setup.ts"],
+    resolveSnapshotPath: (path, extension) => {
+      return path.replace("/src/", "/__snapshots__/") + extension;
+    },
   },
 });

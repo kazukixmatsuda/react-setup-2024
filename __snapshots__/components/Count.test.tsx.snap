@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`スナップショットテスト 1`] = `
+<div>
+  <div>
+    <span>
+      Current Count is 
+      0
+    </span>
+    <button>
+      Count Up
+    </button>
+  </div>
+</div>
+`;

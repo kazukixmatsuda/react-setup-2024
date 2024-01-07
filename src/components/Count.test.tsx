@@ -11,3 +11,8 @@ test("サンプルテスト", async () => {
   await user.click(screen.getByRole("button", { name: "Count Up" }));
   expect(screen.getByText("Current Count is 1")).toBeInTheDocument();
 });
+
+test("スナップショットテスト", () => {
+  const { container } = render(<Count />);
+  expect(container).toMatchSnapshot();
+});
