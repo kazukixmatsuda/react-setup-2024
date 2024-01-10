@@ -9,8 +9,8 @@ beforeAll(() => {
 });
 
 afterEach(() => {
-  cleanup();
   server.resetHandlers();
+  cleanup();
 });
 
 afterAll(() => {

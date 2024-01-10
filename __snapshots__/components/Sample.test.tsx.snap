@@ -3,12 +3,12 @@
 exports[`スナップショットテスト 1`] = `
 <div>
   <div>
-    <span>
-      Current Count is 
-      0
-    </span>
+    <h1>
+      Hello, 
+      Anonymous
+    </h1>
     <button>
-      Count Up
+      ユーザー名取得
     </button>
   </div>
 </div>
